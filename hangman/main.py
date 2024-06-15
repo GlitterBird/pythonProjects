@@ -1,4 +1,3 @@
-from replit import clear
 import random
 import words
 import art
@@ -6,20 +5,19 @@ import art
 print(art.logo)
 
 chosen_word = random.choice(words.word_list)
-
+print(chosen_word)
 list = []
 already_guessed = []
-lives = 6
+failed_attempts = 0
 
 for letter in chosen_word:
     list.append("_")
 
 print(list)
 
-while "_" in list and lives != 0:
+while "_" in list and failed_attempts != 7:
 
     guess = input("Guess a letter: ").lower()
-    clear()
 
     if guess in list:
         print(f"You have already guessed {guess}. Try another letter.")
@@ -34,14 +32,14 @@ while "_" in list and lives != 0:
 
         if guess not in chosen_word:
             print(f"You guessed {guess}. That's not in the word. You lose a life.")
-            lives -= 1
+            failed_attempts += 1
             already_guessed.append(guess)
 
     print(f"wrong letters: {already_guessed}")
-    print(art.stages[lives])
+    print(art.stages[failed_attempts])
     print(f"word: {list}")
 
-if lives == 0:
+if failed_attempts == 7:
     print("you lose")
     print(f"the word was {chosen_word}")
 else:
