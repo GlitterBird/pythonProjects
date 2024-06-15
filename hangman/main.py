@@ -5,7 +5,6 @@ import art
 print(art.logo)
 
 chosen_word = random.choice(words.word_list)
-print(chosen_word)
 list = []
 already_guessed = []
 failed_attempts = 0

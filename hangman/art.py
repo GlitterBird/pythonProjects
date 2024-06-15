@@ -1,6 +1,6 @@
 from pyfiglet import figlet_format
 
-logo = figlet_format("Hangman", font = "standard")
+logo = figlet_format("Hangman","standard")
 
 stages = (
 
