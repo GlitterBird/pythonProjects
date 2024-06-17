@@ -3,7 +3,7 @@ import art
 print(art.logo)
 all_bids = {}
 highest_bid = 0
-person_with_highest = "x"
+person_with_highest = ""
 keep_going = True
 
 while keep_going:
