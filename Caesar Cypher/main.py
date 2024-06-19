@@ -7,6 +7,7 @@ print(logo.logo)
 
 
 def caesar(word, shift_amount, instruction):
+    """Takes in a string and  shifts it by the given shift number to either decode or encode it."""
     final = ""
     shift_amount = shift_amount % 26
     if direction == "decode":
