@@ -4,9 +4,10 @@ draw = False
 comp_win = False
 user_win = False
 def card_dealer():
+    global options
     cards = []
     for i in range(2):
-        cards.append = random.choice(options)
+        cards.append(random.choice(options))
     return cards
 def draw_cards(cards):
     cards.append(random.choice(options))
