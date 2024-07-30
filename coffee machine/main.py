@@ -56,7 +56,7 @@ def calc_money():
             water -= order_name["ingredients"]["water"]
             milk -= order_name["ingredients"]["milk"]
             coffee -= order_name["ingredients"]["coffee"]
-            print(f"Here is your {order}. Enjoy!")
+            print(f"Here is your {order} ☕. Enjoy!")
 
 
 while is_on:
