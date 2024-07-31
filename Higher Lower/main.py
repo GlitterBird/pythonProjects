@@ -8,6 +8,7 @@ score = 0
 correct = True
 first = random.randint(0, len(data_list)-1)
 
+
 def check_answer(first, second):
     global score, correct
 
@@ -27,6 +28,7 @@ def check_answer(first, second):
         correct = False
 
     return second
+
 
 print(pyfiglet.figlet_format("HigherLower", font = "slant"))
 while correct:
